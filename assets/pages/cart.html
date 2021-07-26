@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viagens pra que te quero - Carrinho</title>
+
+  <!-- Icon Fonts -->
+  <link rel="stylesheet" href="/assets/fonts/style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ubuntu:ital,wght@0,600;0,700;1,600;1,700&family=Open+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+    rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <!-- Cart CSS -->
+  <link rel="stylesheet" href="../css/cart.css" />
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="index.html">
+        <span class="logo-alt">Viagens</span>
+        Pra
+        <span class="logo-alt">Que</span>
+        Te
+        <span class="logo-alt">Quero</span>
+      </a>
+      <div class="menu">
+        <a class="menu-item mobile" href="./assets/pages/cart.html"><i class="icon-shopping-cart"><span
+              class="cart-notification cart-notification-hidden"></span></i></a>
+        <a id="menu-icon" class="menu-item mobile"><i class="icon-menu"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="cart-section">
+      <h2 class="title">
+        Carrinho
+      </h2>
+      <table class="orders-container">
+        <thead>
+          <tr>
+            <th>Qtd.</th>
+            <th>Destino</th>
+            <th>Saída</th>
+            <th>Preço</th>
+          </tr>
+        </thead>
+        <tbody class="orders-container-body">
+        </tbody>
+      </table>
+    </section>
+
+    <a href="#main" class="back-to-top back-to-top-hidden"><i class=' icon-arrow-up'></i></a>
+  </main>
+
+  <footer>
+    <p class="copyright">&copy;2021 Viagens pra que te quero - Criado por Lucas Vihuchi</p>
+    <p>Todos os direitos reservados</p>
+  </footer>
+
+  <script src="../scripts/cart.js"></script>
+
+</body>
+
+</html>

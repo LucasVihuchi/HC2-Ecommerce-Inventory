@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viagens pra que te quero</title>
+
+  <!-- Icon Fonts -->
+  <link rel="stylesheet" href="/assets/fonts/style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ubuntu:ital,wght@0,600;0,700;1,600;1,700&family=Open+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+    rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="index.html">
+        <span class="logo-alt">Viagens</span>
+        Pra
+        <span class="logo-alt">Que</span>
+        Te
+        <span class="logo-alt">Quero</span>
+      </a>
+      <div class="menu">
+        <a class="menu-item mobile" href="./assets/pages/cart.html"><i class="icon-shopping-cart"><span
+              class="cart-notification cart-notification-hidden"></span></i></a>
+        <a id="menu-icon" class="menu-item mobile"><i class="icon-menu"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="offers-section">
+      <h2 class="title">
+        Confira nossas incríveis ofertas
+      </h2>
+      <div class="offers-container">
+      </div>
+    </section>
+
+    <div class="menu-modal menu-modal-hidden">
+      <i class="icon-close"></i>
+      <ul>
+        <a href="./assets/pages/cart.html">
+          <li class="modal-item">Carrinho</li>
+        </a>
+        <a href="./assets/pages/client-singin.html">
+          <li class="modal-item">Login</li>
+        </a>
+        <a href="./assets/pages/client-signup.html">
+          <li class="modal-item">Cadastro de clientes</li>
+        </a>
+        <a href="./assets/pages/create-trip.html">
+          <li class="modal-item">Cadastro de viagens</li>
+        </a>
+      </ul>
+    </div>
+
+    <div class="cart-added-modal cart-added-modal-hidden">Viagem Adicionada :)</div>
+
+    <a href="#main" class="back-to-top back-to-top-hidden"><i class=' icon-arrow-up'></i></a>
+  </main>
+
+  <footer>
+    <p class="copyright">&copy;2021 Viagens pra que te quero - Criado por Lucas Vihuchi</p>
+    <p>Todos os direitos reservados</p>
+  </footer>
+
+  <script src="./assets/scripts/main.js"></script>
+
+</body>
+
+</html>
