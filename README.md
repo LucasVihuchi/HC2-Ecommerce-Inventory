@@ -36,6 +36,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### Preview
 
-Em breve..
-
-
+Confira [aqui](vhc-hc2-ecommerce-inventory.netlify.app) 
