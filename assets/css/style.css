@@ -22,6 +22,11 @@ html {
   --button-hover: hsl(var(--hue), 70%, 53%);
   --button-active: hsl(var(--hue), 70%, 33%);
 
+  --hue3: 0;
+  --red-button: hsl(var(--hue3), 70%, 43%);
+  --red-button-hover: hsl(var(--hue3), 70%, 53%);
+  --red-button-active: hsl(var(--hue3), 70%, 33%);
+
   --text-color-light: hsl(var(--hue), 100%, 95%);
   --text-color-medium: var(--body-color-medium);
 
@@ -352,7 +357,7 @@ header .icon-shopping-cart .cart-notification.cart-notification-hidden {
 }
 
 /*** CART ADDED MODAL ***/
-.cart-added-modal {
+.general-notification-modal {
   position: fixed;
   bottom: 5vh;
   left: 10vw;
@@ -374,7 +379,7 @@ header .icon-shopping-cart .cart-notification.cart-notification-hidden {
   transition: bottom .4s;
 }
 
-.cart-added-modal.cart-added-modal-hidden {
+.general-notification-modal.general-notification-modal-hidden {
   opacity: 0;
   visibility: 0;
   z-index: -10;
@@ -485,7 +490,7 @@ footer .copyright{
 }
 
 @media (min-width: 800px) {
-  .cart-added-modal {
+  .general-notification-modal {
     left: 35vw;
     width: 30vw;
   

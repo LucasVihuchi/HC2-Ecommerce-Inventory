@@ -43,8 +43,11 @@ main {
 
 .price-n-buy{
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  gap: 1rem;
+
+  width: 100%;
 }
 
 .price-n-buy span{
@@ -52,4 +55,24 @@ main {
   font-weight: 600;
   font-style: italic;
   font-size: var(--button-text-size);
+}
+
+.price-n-buy .price-n-buy-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.orders-container .decrease-btn,
+.price-n-buy .cart-clean-btn {
+  background-color: var(--red-button);
+}
+.orders-container .decrease-btn:hover,
+.price-n-buy .cart-clean-btn:hover {
+  background-color: var(--red-button-hover);
+}
+.orders-container .decrease-btn:active,
+.price-n-buy .cart-clean-btn:active {
+  background-color: var(--red-button-active);
 }

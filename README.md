@@ -20,19 +20,23 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [x] Adicionar ao carrinho;
 
+- [x] Alterar carrinho;
+
 - [x] Cálculo preço total;
 
 - [x] Dados no localstorage;
+
+- [x] Validação de login para compra;
+
+- [x] Responsividade das partes comuns;
+
+- [ ] Cadastro novas viagens;
 
 - [ ] Cadastro usuario;
 
 - [ ] Login;
 
-- [ ] Validação de login para compra;
-
-- [ ] Cadastro novas viagens;
-
-- [ ] Responsividade;
+- [ ] Responsividade do carrinho;
 
 ### Preview
 
