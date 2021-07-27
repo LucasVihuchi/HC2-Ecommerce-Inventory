@@ -1,0 +1,118 @@
+.signup-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  
+  padding: 1rem 0;
+}
+
+.signup-container,
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.signup-container,
+.signup-container button,
+.input-container input {
+  width: 80vw;
+}
+
+.signup-container .input-container > input {
+  font-size: var(--button-text-size);
+  padding: 0.375rem 1rem;
+
+  border: 0.0625rem solid var(--body-color-medium);
+  border-radius: 0.375rem;
+  outline-width: 0.0625rem;
+  outline-color: var(--body-color-dark);
+
+  color: var(--text-color-medium);
+}
+
+@media (min-width: 550px) {
+  main {
+    min-height: calc(100vh - 3.5rem - 8.375rem);
+  }
+  .signup-container,
+  .input-container input {
+    width: 70vw;
+  }
+  
+}
+
+@media (min-width: 700px) {
+  .signup-container,
+  .input-container input {
+    width: 100%;
+    max-width: 80rem;
+  }
+
+  .signup-container .input-container {
+    flex-direction: row;
+    width: 90%;
+    max-width: none;
+  }
+
+  #client-street-number {
+    width: 30%;
+    max-width: 10rem;
+  }
+
+  #client-cep {
+    width: 40%;
+    max-width: 12rem;
+  }
+}
+
+@media (min-width: 1270px) {
+  :root {
+    /* Text Sizes */
+    --button-text-size: 1.375vw;
+  }
+
+  main {
+    min-height: calc(100vh - 4vw - 8vw);
+  }
+
+  .signup-section {
+    gap: 1.5vw;
+    
+    padding: 1.5vw 0;
+  }
+
+  .signup-container,
+  .input-container {
+    gap: 1.5vw;
+  }
+
+  .signup-container button {
+    max-width: 25vw;
+  }
+
+  .signup-container,
+  .input-container input {
+    max-width: 80%;
+  }
+
+  .signup-container .input-container > input {
+    padding: .5vw 1vw;
+    border-width: .1vw;
+    border-radius: .5vw;
+    outline-width: .1vw;
+  }
+
+  #client-street-number {
+    width: 30%;
+    max-width: 12vw;
+  }
+
+  #client-cep {
+    width: 40%;
+    max-width: 15vw;
+  }
+}

@@ -30,13 +30,13 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [x] Responsividade das home;
 
-- [x] Responsividade do carrinho;
+- [x] Responsividade do carrinho, login e cadastro cliente;
+
+- [x] Cadastro cliente;
+
+- [x] Login;
 
 - [ ] Cadastro novas viagens;
-
-- [ ] Cadastro usuario;
-
-- [ ] Login;
 
 - [ ] Responsividade das demais páginas;
 

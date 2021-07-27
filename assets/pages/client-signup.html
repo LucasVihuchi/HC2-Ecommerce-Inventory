@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viagens pra que te quero - Cadstro de cliente</title>
+
+  <!-- Icon Fonts -->
+  <link rel="stylesheet" href="../fonts/style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ubuntu:ital,wght@0,600;0,700;1,600;1,700&family=Open+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+    rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <!-- Cart CSS -->
+  <link rel="stylesheet" href="../css/client-signup.css" />
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="../../index.html">
+        <span class="logo-alt">Viagens</span>
+        Pra
+        <span class="logo-alt">Que</span>
+        Te
+        <span class="logo-alt">Quero</span>
+      </a>
+      <div class="menu">
+        <a class="menu-item mobile" href="cart.html"><i class="icon-shopping-cart"><span
+              class="cart-notification cart-notification-hidden"></span></i></a>
+        <a id="menu-icon" class="menu-item mobile"><i class="icon-menu"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="signup-section">
+      <h2 class="title">
+        Cadastro de Clientes
+      </h2>
+      <form class="signup-container">
+        <div class="input-container">
+          <label class="sr-only" for="client-name">Nome Completo</label>
+          <input type="text" name="client-name" id="client-name" placeholder="Nome completo" minlength="5" required>
+          <label class="sr-only" for="client-mother-name">Nome da Mãe</label>
+          <input type="text" name="client-mother-name" id="client-mother-name" placeholder="Nome da mãe" minlength="5"
+            required>
+        </div>
+        <div class="input-container">
+          <label class="sr-only" for="client-cpf">CPF</label>
+          <input type="number" name="client-cpf" id="client-cpf" placeholder="CPF" min="0" max="99999999999" required>
+          <label class="sr-only" for="client-birthday">Data de Nascimento</label>
+          <input type="date" name="client-birthday" id="client-birthday" min="1900-01-01" max="2021-01-01" required>
+          <label class="sr-only" for="client-phone">Número de telefone</label>
+          <input type="tel" name="client-phone" id="client-phone" placeholder="Telefone" minlength="10" maxlength="13"
+            required>
+        </div>
+        <div class="input-container">
+          <label class="sr-only" for="client-street">Rua</label>
+          <input type="text" name="client-street" id="client-street" placeholder="Endereço" minlength="2" required>
+          <label class="sr-only" for="client-street-number">Número da Residência</label>
+          <input type="number" name="client-street-number" id="client-street-number" placeholder="Nº" min="0"
+            max="999999" required>
+          <label class="sr-only" for="client-cep">CEP</label>
+          <input type="number" name="client-cep" id="client-cep" placeholder="CEP" min="0" max="99999999" required>
+        </div>
+        <div class="input-container">
+          <label class="sr-only" for="client-city">Cidade</label>
+          <input type="text" name="client-city" id="client-city" placeholder="Cidade" minlength="2" required>
+          <label class="sr-only" for="client-state">Estado</label>
+          <input type="text" name="client-state" id="client-state" placeholder="Estado, Província, ..." minlength="2"
+            required>
+          <label class="sr-only" for="client-country">País</label>
+          <input type="text" name="client-country" id="client-country" placeholder="País" minlength="2" required>
+        </div>
+        <div class="input-container">
+          <label class="sr-only" for="client-email">Email</label>
+          <input type="email" name="client-email" id="client-email" placeholder="Email" minlength="3" required>
+          <label class="sr-only" for="client-password">Senha</label>
+          <input type="password" name="client-password" id="client-password" placeholder="Senha" minlength="8" required>
+          <label class="sr-only" for="client-password-confirm">Confirme a senha</label>
+          <input type="password" name="client-password-confirm" id="client-password-confirm"
+            placeholder="Confirme sua senha" minlength="8" required>
+        </div>
+        <button class="signup-btn" type="submit">Cadastrar</button>
+      </form>
+    </section>
+
+    <div class="menu-modal menu-modal-hidden">
+      <i class="icon-close"></i>
+      <ul>
+        <a href="cart.html">
+          <li class="modal-item">Carrinho</li>
+        </a>
+        <a href="client-signin.html">
+          <li class="modal-item">Login</li>
+        </a>
+        <a href="client-signup.html">
+          <li class="modal-item">Cadastro de clientes</li>
+        </a>
+        <a href="create-trip.html">
+          <li class="modal-item">Cadastro de viagens</li>
+        </a>
+      </ul>
+    </div>
+
+    <div class="general-notification-modal general-notification-modal-hidden"></div>
+
+    <a href="#main" class="back-to-top back-to-top-hidden"><i class=' icon-arrow-up'></i></a>
+  </main>
+
+  <footer>
+    <p class="copyright">&copy;2021 Viagens pra que te quero - Criado por Lucas Vihuchi</p>
+    <p>Todos os direitos reservados</p>
+  </footer>
+
+  <script src="../scripts/common.js"></script>
+  <script src="../scripts/client-signup.js"></script>
+
+</body>
+
+</html>
