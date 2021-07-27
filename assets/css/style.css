@@ -518,17 +518,6 @@ footer .copyright{
 
     --modal-size: 1.75vw;
   }
-
-  main {
-    width: 90%;
-    margin: 4vw 5% 0 5%;
-  }
-
-  button {
-    padding: .5vw 1vw;
-    border-radius: 0.5vw;
-    outline-width: 0.1vw;
-  }
   
   header{
     height: 4vw;
@@ -564,7 +553,15 @@ footer .copyright{
   }
 
   main {
+    width: 90%;
+    margin: 4vw 5% 0 5%;
     min-height: calc(100vh - 4vw - 8vw);
+  }
+
+  button {
+    padding: .5vw 1vw;
+    border-radius: 0.5vw;
+    outline-width: 0.1vw;
   }
 
   .offers-section {

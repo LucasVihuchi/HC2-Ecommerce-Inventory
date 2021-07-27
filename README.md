@@ -28,7 +28,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [x] Validação de login para compra;
 
-- [x] Responsividade das partes comuns;
+- [x] Responsividade das home;
+
+- [x] Responsividade do carrinho;
 
 - [ ] Cadastro novas viagens;
 
@@ -36,7 +38,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [ ] Login;
 
-- [ ] Responsividade do carrinho;
+- [ ] Responsividade das demais páginas;
 
 ### Preview
 

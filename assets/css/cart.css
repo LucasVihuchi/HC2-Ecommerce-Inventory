@@ -1,3 +1,8 @@
+:root {
+  /* Text Sizes */
+  --table-font-size: 1rem;
+}
+
 main {
   width: 98vw;
   margin-left: auto;
@@ -12,6 +17,7 @@ main {
   gap: 1rem;
 
   padding: 1rem 0;
+  font-size: var(--table-font-size);
 }
 
 .orders-container {
@@ -27,6 +33,7 @@ main {
 .orders-container td {
   border-style: solid;
   border-width: .0625rem;
+  border-spacing: .0625rem;
   border-color: var(--body-color-medium);
 }
 
@@ -75,4 +82,117 @@ main {
 .orders-container .decrease-btn:active,
 .price-n-buy .cart-clean-btn:active {
   background-color: var(--red-button-active);
+}
+
+@media (min-width: 500px) {
+  .price-n-buy{
+    flex-direction: row;
+    justify-content: space-between;
+  
+    width: 100%;
+  }
+
+  .price-n-buy .price-n-buy-btns {
+    justify-content: center;
+    width: fit-content;
+    gap: 1rem;
+
+    padding: .5rem;
+  }
+}
+
+@media (min-width: 550px) {
+  main {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  
+    min-height: calc(100vh - 3.5rem - 8.375rem);
+  }
+
+  .orders-container tr th:first-child,
+  .orders-container tr td:first-child {
+    width: 6rem;
+  }
+
+  .orders-container tr th:last-child,
+  .orders-container tr td:last-child {
+    width: 9rem;
+  }
+
+  .orders-container tr th:nth-child(2),
+  .orders-container tr td:nth-child(2) {
+    width: auto;
+  }
+}
+
+@media (min-width: 700px) {
+  .orders-container tr th:nth-child(3),
+  .orders-container tr td:nth-child(3) {
+    width: auto;
+    display: table-cell;
+  }
+}
+
+@media (min-width: 800px) {
+  :root {
+    /* Text Sizes */
+    --table-font-size: 1.125rem;
+  }
+
+  .orders-container tr th:first-child,
+  .orders-container tr td:first-child {
+    width: 7rem;
+  }
+}
+
+@media (min-width: 1270px) {
+  :root {
+    /* Text Sizes */
+    --table-font-size: 1.375vw;
+    --button-text-size: 1.375vw;
+  }
+
+  main {
+    min-height: calc(100vh - 4vw - 8vw);
+  }
+
+  .cart-section {
+    gap: 1.5vw;
+  
+    padding: 1.5vw 0;
+  }
+
+  .orders-container,
+  .orders-container tr,
+  .orders-container th,
+  .orders-container td {
+    border-width: .125vw;
+    border-spacing: .125vw;
+  }
+
+  .orders-container tr th:first-child,
+  .orders-container tr td:first-child {
+    width: 10vw;
+  }
+
+  .orders-container tr th:last-child,
+  .orders-container tr td:last-child {
+    width: 13vw;
+  }
+
+  .orders-container .decrease-btn,
+  .orders-container .increase-btn {
+    margin: .125vw .375vw;
+    padding: .125vw .625vw;
+  }
+
+  .price-n-buy,
+  .price-n-buy .price-n-buy-btns{
+    gap: 1.25vw;
+  }
+
+  .price-n-buy .price-n-buy-btns {
+    padding: .75vw;
+  }
 }
