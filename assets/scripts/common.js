@@ -5,7 +5,9 @@ if (localStorage.getItem('offerCards') == null) {
 
 if (localStorage.getItem('statusLogin') != "true" && localStorage.getItem('statusLogin') != "false") {
   localStorage.setItem('statusLogin', false);
+  localStorage.setItem('currentSession', null);
 }
+
 // Show/Hide back to top button according to scroll position 
 const backToTop = document.querySelector('.back-to-top');
 

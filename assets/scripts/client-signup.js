@@ -1,5 +1,6 @@
 const signUpContainer = document.querySelector('.signup-container');
 
+// Register new customer
 signUpContainer.addEventListener('submit', (event) => {
     event.preventDefault();
     const clientName = document.getElementById('client-name');

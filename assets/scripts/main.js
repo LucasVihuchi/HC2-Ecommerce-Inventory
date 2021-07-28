@@ -12,8 +12,8 @@ offerCards.forEach(offerCard => {
           <h3>${offerCard.destination}</h3>
           <p>Saindo de ${offerCard.depart}</p>
         </div>
-        <p class="old-price">De: <span>R$ ${offerCard.old_price}</span></p>
-        <p class="new-price">Por: <span>R$ ${offerCard.new_price} </span></p>
+        <p class="old-price">De: <span>R$ ${offerCard.old_price.toFixed(2)}</span></p>
+        <p class="new-price">Por: <span>R$ ${offerCard.new_price.toFixed(2)} </span></p>
         <button name="add-to-cart" class="add-to-cart">Adicionar ao Carrinho</button>
       </div>
     </div>

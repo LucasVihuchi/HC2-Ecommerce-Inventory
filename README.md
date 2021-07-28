@@ -14,31 +14,27 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### Funcionalidades
 
-- [x] Geração dinâmica do cards;
+- [x] Geração dinâmica do cards de ofertas;
 
 - [x] Tabela do carrinho;
 
 - [x] Adicionar ao carrinho;
 
-- [x] Alterar carrinho;
+- [x] Alterar/limpar carrinho;
 
-- [x] Cálculo preço total;
+- [x] Cálculo preço total do carrinho;
 
 - [x] Dados no localstorage;
 
 - [x] Validação de login para compra;
 
-- [x] Responsividade das home;
+- [x] Cadastro novas viagens;
 
-- [x] Responsividade do carrinho, login e cadastro cliente;
-
-- [x] Cadastro cliente;
+- [x] Cadastro de clientes;
 
 - [x] Login;
 
-- [ ] Cadastro novas viagens;
-
-- [ ] Responsividade das demais páginas;
+- [x] Responsividade;
 
 ### Preview
 

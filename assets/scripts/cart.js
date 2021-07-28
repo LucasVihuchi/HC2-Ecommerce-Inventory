@@ -22,7 +22,7 @@ else {
           <td><button class="decrease-btn">-</button>${item.quantity}<button class="increase-btn">+</button></td>
           <td>${card.destination}</td>
           <td>${card.depart}</td>
-          <td>R$ ${card.new_price}</td>
+          <td>R$ ${card.new_price.toFixed(2)}</td>
         </tr>
         `;
         totalPrice += (item.quantity * card.new_price);

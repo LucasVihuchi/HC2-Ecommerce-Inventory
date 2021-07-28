@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viagens pra que te quero - Cadstro de viagens</title>
+
+  <!-- Icon Fonts -->
+  <link rel="stylesheet" href="../fonts/style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ubuntu:ital,wght@0,600;0,700;1,600;1,700&family=Open+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+    rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <!-- Cart CSS -->
+  <link rel="stylesheet" href="../css/create-trip.css" />
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="../../index.html">
+        <span class="logo-alt">Viagens</span>
+        Pra
+        <span class="logo-alt">Que</span>
+        Te
+        <span class="logo-alt">Quero</span>
+      </a>
+      <div class="menu">
+        <a class="menu-item mobile" href="cart.html"><i class="icon-shopping-cart"><span
+              class="cart-notification cart-notification-hidden"></span></i></a>
+        <a id="menu-icon" class="menu-item mobile"><i class="icon-menu"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="trip-section">
+      <h2 class="title">
+        Cadastro de Viagens
+      </h2>
+      <form class="trip-container">
+        <div class="input-container">
+          <label class="sr-only" for="trip-destination">Destino da viagem</label>
+          <input type="text" name="trip-destination" id="trip-destination" placeholder="Destino" minlength="2"
+            maxlength="13" required>
+          <label class="sr-only" for="trip-depart">Local de embarque</label>
+          <input type="text" name="trip-depart" id="trip-depart" placeholder="Local de Embarque" minlength="2"
+            maxlength="13" required>
+        </div>
+        <div class="input-container">
+          <label class="sr-only" for="trip-old-price">Preço normal</label>
+          <input type="number" name="trip-old-price" id="trip-old-price" placeholder="Preço normal" min="0"
+            max="99999999.99" required>
+          <label class="sr-only" for="trip-new-price">Preço promocional</label>
+          <input type="number" name="trip-new-price" id="trip-new-price" placeholder="Preço promocional" min="0"
+            max="99999999.99" required>
+        </div>
+        <div class="input-container">
+          <label class="sr-only" for="trip-image">URL da imagem do destino</label>
+          <input type="url" name="trip-image" id="trip-image" placeholder="URL da imagem do destino" required>
+        </div>
+        <div class="input-container">
+          <label class="sr-only" for="admin-login">Nome de usuario</label>
+          <input type="text" name="admin-login" id="admin-login" placeholder="login: admin" minlength="3" required>
+          <label class="sr-only" for="admin-password">Senha</label>
+          <input type="password" name="admin-password" id="admin-password" placeholder="Senha: admin" minlength="5"
+            required>
+          <label class="sr-only" for="admin-password-confirm">Confirme a senha</label>
+          <input type="password" name="admin-password-confirm" id="admin-password-confirm"
+            placeholder="Confirme sua senha" minlength="5" required>
+        </div>
+        <button class="register-btn" type="submit">Cadastrar</button>
+      </form>
+    </section>
+
+    <div class="menu-modal menu-modal-hidden">
+      <i class="icon-close"></i>
+      <ul>
+        <a href="cart.html">
+          <li class="modal-item">Carrinho</li>
+        </a>
+        <a href="client-signin.html">
+          <li class="modal-item">Login</li>
+        </a>
+        <a href="client-signup.html">
+          <li class="modal-item">Cadastro de clientes</li>
+        </a>
+        <a href="create-trip.html">
+          <li class="modal-item">Cadastro de viagens</li>
+        </a>
+      </ul>
+    </div>
+
+    <div class="general-notification-modal general-notification-modal-hidden"></div>
+
+    <a href="#main" class="back-to-top back-to-top-hidden"><i class=' icon-arrow-up'></i></a>
+  </main>
+
+  <footer>
+    <p class="copyright">&copy;2021 Viagens pra que te quero - Criado por Lucas Vihuchi</p>
+    <p>Todos os direitos reservados</p>
+  </footer>
+
+  <script src="../scripts/common.js"></script>
+  <script src="../scripts/create-trip.js"></script>
+
+</body>
+
+</html>
