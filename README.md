@@ -1,6 +1,6 @@
-# E-commerce para inventário de produtos e dados de clientes - HC#2 Etapa 1
+# E-commerce para inventário de viagens e dados de clientes - HC#2 Etapa 1
 
-Site para cadastro em newsletter. Projeto final para a segunda etapa do curso Hiring Coders #2 da VTEX.
+E-commerce para inventário de viagens e dados de clientes. Projeto final para a primeira etapa do curso Hiring Coders #2 da VTEX.
 
 ### 🛠 Tecnologias
 
